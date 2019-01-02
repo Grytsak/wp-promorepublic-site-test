@@ -34,30 +34,262 @@
 
     <meta name="apple-itunes-app" content="app-id=1189674685">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
-
-
-<!--    <link href="--><?php //echo  get_template_directory_uri(); ?><!--/resources/css/style.css" rel="stylesheet" data-test="test">-->
-<!--     Main compiled script -->
-
-<!--    <script src="--><?php //echo  get_template_directory_uri(); ?><!--/resources/js/main.js" async></script>-->
-<!--     End Main compiled script -->
+    <script src="<?php echo get_theme_file_uri('dist/bundle.js') ?>" async></script>
 
     <?php wp_head(); ?>
 </head>
-<body class="-fourthversion">
+<body class="<?php echo writeModificator(); ?>">
+
+<?php
+
+function writeModificator()
+{
+    if(strpos($_SERVER['REQUEST_URI'], '?') === false) {
+        $uri = $_SERVER['REQUEST_URI'];
+    } else {
+        $uri = substr_replace($_SERVER['REQUEST_URI'], '', strpos($_SERVER['REQUEST_URI'], '?'));
+    }
+
+    switch ($uri) {
+        case '/en/newindex.php':
+        case '/en/index.php':
+            return '-fourthversion -landing';
+            break;
+        case '/en/agencies-freelancers.php':
+            return ' -fourthversion -agency-main';
+            break;
+        case '/en/success-stories.php':
+            return '-thirdversion -ss -ss-main';
+            break;
+        case '/en/ss-florist.php':
+            return '-ss -ss-florist -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/ss-restaraunt.php':
+            return '-ss -ss-restaraunt -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/ss-therapy.php':
+            return '-ss -ss-therapy -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/ss-agency.php':
+            return '-ss -ss-agency -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/ss-retail.php':
+            return '-ss -ss-retail -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/ss-wild-and-roaming.php':
+            return '-ss -ss-wild-and-roaming -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/agencies.php':
+            return '-agency';
+            break;
+        case '/en/press.php':
+            return 'about__main-section -inverted -fourthversion';
+            break;
+        case '/en/about.php':
+            return 'about__main-section -inverted -fourthversion';
+            break;
+        case '/en/careers.php':
+            return 'about__main-section -inverted -fourthversion';
+            break;
+        case '/en/career.php':
+            return 'about__main-section -inverted';
+            break;
+        case '/en/features.php':
+            return '-inner-page';
+            break;
+        case '/en/pricing.php':
+            return '-fourthversion -pricing';
+            break;
+        case '/en/smart-posting.php':
+            return '-fourthversion -products -smart-posting';
+            break;
+        case '/en/intelligent-ads.php':
+            return '-fourthversion -products -intelligent-ads';
+            break;
+        case '/en/smart-monitoring.php':
+            return '-fourthversion -products -smart-monitoring';
+            break;
+        case '/en/retail-ecommerce.php':
+            return ' -fourthversion -industry -retail_ecommerce';
+            break;
+        case '/en/food-restaurants.php':
+            return ' -fourthversion -industry -food_restaurants';
+            break;
+        case '/en/fitness-sports.php':
+            return ' -fourthversion -industry -fitness_sports';
+            break;
+        case '/en/health-beauty.php':
+            return ' -fourthversion -industry -health_beauty';
+            break;
+        case '/en/education-coaching.php':
+            return ' -fourthversion -industry -education_coaching';
+            break;
+        case '/en/business-finances.php':
+            return ' -fourthversion -industry -business_finances';
+            break;
+        case '/en/home-interior.php':
+            return ' -fourthversion -industry -home_interior';
+            break;
+        case '/en/real-estate.php':
+            return ' -fourthversion -industry -real_estate';
+            break;
+        case '/en/choose-your-industry.php':
+            return ' -thirdversion -seo-article -industries-page';
+            break;
+        case '/integrations-hubspot/index.php':
+            return '-inner-page';
+            break;
+        case '/integrations-buffer/index.php':
+            return '-inner-page';
+            break;
+        case '/affiliate/index.php':
+            return '-inner-page';
+            break;
+        case '/affiliate-partners/index.php':
+            return ' -aff-partners -inverted';
+            break;
+        case '/en/social-commerce-for-small-business.php':
+            return ' -thirdversion -seo-article -social-commerce-for-small-business';
+            break;
+        case '/en/facebook-post-ideas.php':
+            return ' -thirdversion -seo-article -facebook-post-ideas';
+            break;
+        case '/en/facebook-content-strategy.php':
+            return ' -thirdversion -seo-article -facebook-content-strategy';
+            break;
+        case '/en/monitor-mention-on-social-media.php':
+            return ' -thirdversion -seo-article -monitor-mention-on-social-media';
+            break;
+        case '/en/why-to-schedule-posts-on-facebook.php':
+            return ' -thirdversion -seo-article -why-to-schedule-posts-on-facebook';
+            break;
+        case '/en/sitemap.php':
+            return ' -thirdversion -seo-article';
+            break;
 
 
-<section class="main-section -fourthversion">
+        case '/en/':
+            return '-fourthversion -landing';
+            break;
+        case '/en/agencies-freelancers/':
+            return ' -fourthversion -agency-main';
+            break;
+        case '/en/pricing/':
+            return '-fourthversion -pricing';
+            break;
+        case '/en/smart-posting/':
+            return '-fourthversion -products -smart-posting';
+            break;
+        case '/en/intelligent-ads/':
+            return '-fourthversion -products -intelligent-ads';
+            break;
+        case '/en/social-monitoring/':
+            return '-fourthversion -products -smart-monitoring';
+            break;
+        case '/en/retail-ecommerce/':
+            return ' -fourthversion -industry -retail_ecommerce';
+            break;
+        case '/en/food-restaurants/':
+            return ' -fourthversion -industry -food_restaurants';
+            break;
+        case '/en/fitness-sports/':
+            return ' -fourthversion -industry -fitness_sports';
+            break;
+        case '/en/health-beauty/':
+            return ' -fourthversion -industry -health_beauty';
+            break;
+        case '/en/education-coaching/':
+            return ' -fourthversion -industry -education_coaching';
+            break;
+        case '/en/business-finances/':
+            return ' -fourthversion -industry -business_finances';
+            break;
+        case '/en/home-interior/':
+            return ' -fourthversion -industry -home_interior';
+            break;
+        case '/en/real-estate/':
+            return ' -fourthversion -industry -real_estate';
+            break;
+        case '/en/choose-your-industry/':
+            return ' -thirdversion -seo-article -industries-page';
+            break;
+        case '/en/about/':
+            return 'about__main-section -inverted -fourthversion';
+            break;
+        case '/en/press/':
+            return 'about__main-section -inverted -fourthversion';
+            break;
+        case '/en/careers/':
+            return 'about__main-section -inverted -fourthversion';
+            break;
+        case '/en/agencies/':
+            return '-agency';
+            break;
+        case '/en/features/':
+            return '-inner-page';
+            break;
+        case '/en/success-stories/':
+            return '-thirdversion -ss -ss-main';
+            break;
+        case '/en/ss-wild-and-roaming/':
+            return '-ss -ss-wild-and-roaming -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/ss-florist/':
+            return '-ss -ss-florist -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/ss-restaurant/':
+            return '-ss -ss-restaraunt -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/ss-therapy/':
+            return '-ss -ss-therapy -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/ss-agency/':
+            return '-ss -ss-agency -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/ss-retail/':
+            return '-ss -ss-retail -ss-logo -ss-overlay -inverted';
+            break;
+        case '/en/social-commerce-for-small-business/':
+            return ' -thirdversion -seo-article -social-commerce-for-small-business';
+            break;
+        case '/en/facebook-post-ideas/':
+            return ' -thirdversion -seo-article -facebook-post-ideas';
+            break;
+        case '/en/facebook-content-strategy/':
+            return ' -thirdversion -seo-article -facebook-content-strategy';
+            break;
+        case '/en/monitor-mention-on-social-media/':
+            return ' -thirdversion -seo-article -monitor-mention-on-social-media';
+            break;
+        case '/en/why-to-schedule-posts-on-facebook/':
+            return ' -thirdversion -seo-article -why-to-schedule-posts-on-facebook';
+            break;
+        case '/en/sitemap/':
+            return ' -thirdversion -seo-article';
+            break;
+        case '/integrations-hubspot/':
+            return '-inner-page';
+            break;
+        case '/integrations-buffer/':
+            return '-inner-page';
+            break;
+    }
+    
+    if (preg_match('#/en/careers/(.+?)#', $uri)) {
+        return 'about__main-section -inverted -fourthversion';
+    }
+}
+?>
+
+
+<section class="main-section <?php  echo writeModificator(); ?>">
     <div class="container">
         <div class="header-spacer"></div>
         <header class="main-header -thirdversion">
 
 
                 <div class="navigation-container">
-                    <a href="/" class="pr-logo main-header__logo" rel="noindex"></a>
+                    <a href="/en/" class="pr-logo main-header__logo" rel="noindex"></a>
                     <div class="main-header__wrap -active">
                         <nav class="main-nav">
                             <?php
@@ -81,35 +313,35 @@
                             ?>
 
                             <li class="main-nav__item sub-menu-container">
-                                <span onclick="toggleProductsMenu()">Products</span>
+                                <span>Products</span>
                                 <div class="inner-list-container">
                                     <ul class="main-nav__level-two inner-list">
                                         <li>
-                                            <a href="/en/smart-posting.php" class="main-nav__inner-item" rel="noindex">Smart Posting</a>
+                                            <a href="/en/smart-posting/" class="main-nav__inner-item" rel="noindex">Smart Posting</a>
                                         </li>
                                         <li>
-                                            <a href="/en/intelligent-ads.php" class="main-nav__inner-item" rel="noindex">Intelligent Ads</a>
+                                            <a href="/en/intelligent-ads/" class="main-nav__inner-item" rel="noindex">Intelligent Ads</a>
                                         </li>
                                         <li>
-                                            <a href="/en/smart-monitoring.php" class="main-nav__inner-item" rel="noindex">Social Monitoring</a>
+                                            <a href="/en/social-monitoring/" class="main-nav__inner-item" rel="noindex">Social Monitoring</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="main-nav__item">
-                                <a href="/en/success-stories.php" rel="noindex">Success stories</a>
+                                <a href="/en/success-stories/" rel="noindex">Success stories</a>
                             </li>
                             <li class="main-nav__item">
-                                <a href="/pricing" rel="noindex">Pricing</a>
+                                <a href="/en/pricing/" rel="noindex">Pricing</a>
                             </li>
                             <li class="main-nav__item">
-                                <a href="/en/about.php" rel="noindex">About</a>
+                                <a href="/en/about/" rel="noindex">About</a>
                             </li>
                             <li class="main-nav__item">
                                 <a href="//promorepublic.com/en/blog/" rel="noindex">Blog</a>
                             </li>
                             <li class="main-nav__item">
-                                <a href="/en/agencies-freelancers.php" rel="noindex">Agencies</a>
+                                <a href="/en/agencies-freelancers/" rel="noindex">Agencies</a>
                             </li>
                         </nav>
                         <div class="main-header__ham-menu"></div>

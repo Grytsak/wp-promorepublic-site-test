@@ -1,0 +1,43 @@
+{
+  "name": "promorepublic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle_js": "uglifyjs -c -m -- js/jquery-3.0.0.min.js js/jquery.event.move.js js/jquery.event.swipe.js js/jquery.validate.min.js js/additional-methods.min.js js/common.js js/subscribe.js js/unslider-min.js js/script-inner59.js js/script114.js > js/bundle_srcipts.min.js",
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack -p --config ./webpack.config.js --display-error-details",
+    "watch": "webpack -d --watch --config ./webpack.config.js --display-error-details"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grytsak/wp-promorepublic-site-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grytsak/wp-promorepublic-site-test/issues"
+  },
+  "homepage": "https://github.com/Grytsak/wp-promorepublic-site-test#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "autoprefixer": "^9.4.2",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.0",
+    "cssnano": "^4.1.7",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "postcss": "^7.0.6",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.0",
+    "postcss-preset-env": "^6.5.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

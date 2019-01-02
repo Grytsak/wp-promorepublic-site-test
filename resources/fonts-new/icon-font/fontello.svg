@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="chevron" unicode="&#xe805;" d="M40-150c-10 0-20 5-27 12-16 15-16 40 0 55l442 433-442 435c-16 15-16 40 0 55 15 15 40 15 55 0l470-460c7-7 12-17 12-27 0-10-5-20-12-28l-470-463c-8-7-18-12-28-12z" horiz-adv-x="550" />
+</font>
+</defs>
+</svg>

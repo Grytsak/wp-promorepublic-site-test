@@ -1,0 +1,341 @@
+/*HEADER*/
+
+.-industry .main-content__left {
+  width: 53%;
+}
+
+.-industry .main-section .fourthversion-section-subtitle {
+  color: #fff;
+  font-size: 12px;
+  text-align: left;
+}
+
+.-industry .main-section .main-section__bg {
+  background-color: #5c7999;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.-retail_ecommerce .main-section .main-section__bg {
+  background-image: url("../images/industries/eCommerce_bg.jpg");
+}
+.-food_restaurants .main-section .main-section__bg {
+  background-image: url("../images/industries/food_bg.jpg");
+}
+.-fitness_sports .main-section .main-section__bg {
+   background-image: url("../images/industries/fitness_bg.jpg");
+ }
+.-health_beauty .main-section .main-section__bg {
+  background-image: url("../images/industries/health_bg.jpg");
+}
+.-education_coaching .main-section .main-section__bg {
+  background-image: url("../images/industries/education_bg.jpg");
+}
+.-business_finances .main-section .main-section__bg {
+  background-image: url("../images/industries/business_bg.jpg");
+}
+.-home_interior .main-section .main-section__bg {
+  background-image: url("../images/industries/home_bg.jpg");
+  background-position: bottom center;
+}
+.-real_estate .main-section .main-section__bg {
+  background-image: url("../images/industries/estate_bg.jpg");
+}
+.-agencies_freelancers .main-section .main-section__bg {
+  background-image: url("../images/industries/agencies_bg.jpg");
+}
+
+
+.-industry .main-section.-fourthversion .main-section__bg:after {
+  background-color: rgba(0,0,0,0.65);
+}
+
+/*HEADER end*/
+
+/*BENEFITS*/
+
+.-industry .benefits {
+  margin-bottom: 180px;
+}
+
+.-industry .benefits .fourthversion-section-main-title {
+  margin: 15px 0 75px;
+}
+
+.-industry .float-column__text-box {
+  padding: 35px 34px 30px;
+}
+
+.-retail_ecommerce .float-column:nth-child(1) .float-column__text-box {  margin-top: 150px;  }
+
+.-food_restaurants .float-column:nth-child(1) .float-column__text-box {  margin-top: 150px;  }
+
+.-fitness_sports .float-column:nth-child(1) .float-column__text-box {  margin-top: 150px;  }
+
+.-education_coaching .float-column:nth-child(1) .float-column__text-box {  margin-top: 150px;  }
+
+.-home_interior .float-column:nth-child(1) .float-column__text-box {  margin-top: 150px;  }
+
+.-agencies_freelancers .float-column:nth-child(1) .float-column__text-box {  margin-top: 150px;  }
+.-agencies_freelancers .float-column:nth-child(3) .float-column__text-box {  margin-top: 120px;  }
+
+
+.benefits__icon-container {
+  margin-bottom: 20px;
+}
+
+.benefits__icon {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+}
+
+/*BENEFITS end*/
+
+
+/*SUCCESS STORY*/
+
+.success-story {
+  position: relative;
+  margin: 100px 0;
+  overflow: hidden;
+}
+
+.success-story:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 95px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #5c7999;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.-retail_ecommerce .success-story:after {
+  background-image: url("../images/success-stories/eCommerce_story_bg_2000.jpg");
+  background-position: top center;
+}
+.-food_restaurants .success-story:after {
+  background-image: url("../images/success-stories/food_story_bg.jpg");
+}
+.-health_beauty .success-story:after {
+  background-image: url("../images/success-stories/health_story_bg.jpg");
+  background-position: top center;
+}
+/*.-agencies_freelancers .success-story:after {*/
+  /*background-image: url("../img-new/new-landing/industries_images/agencies_freelancers/agencies_story_bg.jpg");*/
+/*}*/
+.-agency-main .success-story:after {
+  background-image: url("../images/success-stories/agencies_story_bg.jpg");
+}
+
+.success-story svg {
+  position: absolute;
+  top: 93px;
+  left: 0;
+  width: 100%;
+  height: 21vw;
+  transform: rotate(180deg)
+}
+
+.success-story__description {
+  max-width: 595px;
+  width: 100%;
+  color: #15323E;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 28px auto 120px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.success-story__description a {
+  color: #FF7757;
+}
+
+.success-story__text-box {
+  position: relative;
+  max-width: 585px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 3px 5px 30px 4px rgba(0, 50, 70, 0.22);
+  margin-bottom: 200px;
+  padding: 80px 30px 30px;
+}
+
+.success-story__logo {
+  display: block;
+  position: absolute;
+  top: -50px;
+  width: 96px;
+  height: 96px;
+  box-shadow: 4.4px 6.7px 20px 0 rgba(0, 50, 70, 0.18);
+  border-radius: 50%;
+}
+
+.success-story__company-name {
+  color: #516e91;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2.5;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.success-story__quote {
+  color: #516e91;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 45px 0;
+  text-align: left;
+}
+
+.success-story__link{
+  color: #0074A4;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.93;
+  opacity: 0.8;
+}
+
+
+
+/*SUCCESS STORY end*/
+
+/*OFFERS*/
+
+.-industry .offers {
+  margin: 145px 0 208px;
+}
+
+.-industry .odd-row .odd-column-right, .-retail_ecommerce .even-row .even-column-left {
+  align-self: center;
+}
+
+.-industry .offers .fourthversion-section-main-title {
+  max-width: 775px;
+  width: 100%;
+  margin: 10px auto 75px;
+}
+
+.-industry .odd-image, .-industry .even-image {
+  max-width: 650px;
+}
+
+.-industry .odd-even-title {
+  color: #516e91;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+/*OFFERS end*/
+
+
+@media screen and (max-width: 1500px) {
+  .success-story:after {
+    top: 205px;
+  }
+
+ .success-story svg {
+    top: 203px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .-industry .odd-row, .-retail_ecommerce .even-row {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .-industry .main-content__left {
+    max-width: 80%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .-industry .main-section .fourthversion-section-subtitle {
+    text-align: center;
+  }
+
+  .success-story__text-box {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .odd-row .odd-column-right, .even-row .even-column-left {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  .benefits:after {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .-industry .main-content__left {
+    max-width: 100%;
+  }
+
+  .success-story:after {
+    top: 355px;
+  }
+
+  .success-story svg {
+    top: 353px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .success-story__quote {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+   .success-story__text-box {
+    padding: 55px 20px 20px;
+  }
+
+  .float-column__tittle {
+    font-size: 28px;
+  }
+
+  .-industry .odd-even-title {
+    font-size: 28px;
+  }
+
+  .success-story__link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .-industry .main-content__btns-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .success-story__link {
+    font-size: 10px;
+  }
+}
+
+

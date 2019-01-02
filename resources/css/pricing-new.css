@@ -1,0 +1,113 @@
+.section-title {
+  margin-bottom: 56px;
+  font-size: 40px;
+  line-height: 48px;
+  color: #3b3b3b;
+}
+.section-title--widget {
+  margin-bottom: 36px;
+}
+.section-title__sub {
+  font-weight: 300;
+}
+.pricing-features {
+  max-width: 1400px;
+  margin: 0 auto 100px;
+}
+@media screen and (max-width: 800px) {
+  .pricing-features {
+    display: none;
+  }
+}
+.pricing-features__items {
+  display: flex;
+  width: 100%;
+  padding: 0 14px;
+}
+.pricing-features__items .pricing-feature {
+  flex: 1;
+}
+
+.pricing-feature + .pricing-feature {
+  margin-left: 14px;
+}
+
+.pricing-feature {
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 300;
+  border-radius: 10px;
+  padding: 30px 16px 70px;
+  text-align: center;
+  background: #fff;
+  color: #3b3b3b;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(59, 59, 59, .1);
+}
+.pricing-feature__img {
+  background: transparent no-repeat center center;
+  background-size: contain;
+}
+.pricing-feature__img:after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 84%;
+}
+.pricing-feature:after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  background: #cecece;
+  border-radius: 0 0 10px 10px;
+}
+.pricing-feature:nth-child(1):after {
+  background: #fec200;
+}
+.pricing-feature:nth-child(2):after {
+  background: #f09d45;
+}
+.pricing-feature:nth-child(3):after {
+  background: #ed773e;
+}
+.pricing-feature:nth-child(4):after {
+  background: #ec6a48;
+}
+.pricing-feature:nth-child(5):after {
+  background: #ec5048;
+}
+
+.pricing-feature:nth-child(1) .pricing-feature__img {
+  background-image: url('/img-new/pricing/1.jpg')
+}
+.pricing-feature:nth-child(2) .pricing-feature__img {
+  background-image: url('/img-new/pricing/2.jpg')
+}
+.pricing-feature:nth-child(3) .pricing-feature__img {
+  background-image: url('/img-new/pricing/3.jpg')
+}
+.pricing-feature:nth-child(4) .pricing-feature__img {
+  background-image: url('/img-new/pricing/4.jpg')
+}
+.pricing-feature:nth-child(5) .pricing-feature__img {
+  background-image: url('/img-new/pricing/5.jpg')
+}
+
+
+
+.pricing-feature__title {
+  margin: 24px 0 30px;
+}
+@media screen and (max-width: 1200px) {
+  .pricing-feature {
+    padding: 16px 10px 50px;
+  }
+
+  .pricing-feature__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 16px 0;
+  }
+}

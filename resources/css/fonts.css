@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts-new/icon-font/fontello.eot?20038216");
+  src: url("../fonts-new/icon-font/fontello.eot?20038216#iefix") format("embedded-opentype"), url("../fonts-new/icon-font/fontello.woff2?20038216") format("woff2"), url("../fonts-new/icon-font/fontello.woff?20038216") format("woff"), url("../fonts-new/icon-font/fontello.ttf?20038216") format("truetype"), url("../fonts-new/icon-font/fontello.svg?20038216#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'fontello-soc';
+  src: url("../fonts-new/socicon/fontello-soc.eot?20038216");
+  src: url("../fonts-new/socicon/fontello-soc.eot?20038216#iefix") format("embedded-opentype"), url("../fonts-new/socicon/fontello-soc.woff2?20038216") format("woff2"), url("../fonts-new/socicon/fontello-soc.woff?20038216") format("woff"), url("../fonts-new/socicon/fontello-soc.ttf?20038216") format("truetype"), url("../fonts-new/socicon/fontello-soc.svg?20038216#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }

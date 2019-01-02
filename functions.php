@@ -2,11 +2,12 @@
 
 // add scripts and styles
 function promorepublic_files() {
-    wp_register_script('jquery','https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js');
-    wp_enqueue_script('main-script', get_theme_file_uri('resources/js/main.js'), NULL, '1.0', true);
+//    wp_enqueue_script('main-script', get_theme_file_uri('dist/bundle.js'), NULL, '1.0', true);
 
-
-    wp_enqueue_style('main-style', get_theme_file_uri('/style.css'));
+    wp_enqueue_style( 'google_web_fonts',
+        'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Lato:300,400,500,600,700,900|' );
+    wp_enqueue_style( 'fontawesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
+    wp_enqueue_style('main-style', get_theme_file_uri('/dist/bundle.css'));
 }
 add_action('wp_enqueue_scripts', 'promorepublic_files');
 

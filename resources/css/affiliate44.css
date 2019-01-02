@@ -1,0 +1,99 @@
+
+body {
+    font-family: Arial, sans-serif;
+}  
+
+.program__title {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.partner__title,
+.reason__title,
+.steps__title {
+    font-size: 26px;
+    font-weight: normal;
+    color: #494949;
+    text-align: left;
+}
+.program__text,
+.partner__text {
+    font-size: 16px;
+    line-height: 21px;
+    color: #494949;
+}
+a {
+    text-decoration: none;
+}
+.program,
+.partner,
+.reason,
+.steps {
+  width: 100%;
+  display: block;
+  padding: 40px 0 0 0;
+}
+.program__container,
+.partner__container,
+.reason__container,
+.steps__container {
+    max-width: 620px;
+    margin: 0 auto;
+}
+.program {
+    padding: 0;
+}
+.program__subtitle {
+    color: #00bde9;
+    margin-bottom: 20px;
+}
+.partner__title {
+    margin-bottom: 20px;
+}
+.partner__img {
+  margin-bottom: 20px;
+}
+.reason__title {
+    margin-bottom: 20px;
+}
+.reason__list {
+    margin-left: 40px;
+}
+.reason__list li {
+    line-height: 30px;
+    color: #494949;
+}
+.steps {
+    padding: 40px 0 100px 0;
+}
+.steps__title {
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.steps__title,
+.steps p,
+.steps .join-btn {
+    color: #000;
+}
+.steps a:hover {
+    text-decoration: underline;
+}
+.step {
+    margin-bottom: 50px;
+}
+
+.step__title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.join-btn {
+    width: 105px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid;
+    padding: 10px;
+    margin: 20px auto 30px;
+}

@@ -1,0 +1,234 @@
+body.-social-commerce-for-small-business, body.-facebook-post-ideas {
+  font-family: Lato, Arial, sans-serif;
+  line-height: 1.8;
+}
+
+body.-seo-article {
+  font-family: Lato, Arial, sans-serif;
+  line-height: 1.8;
+}
+
+.-social-commerce-for-small-business .btn-container, .-facebook-post-ideas .btn-container {
+  margin: 40px 0;
+}
+
+.-seo-article .btn-container {
+  margin: 40px 0;
+}
+
+section:last-of-type .article-container {
+  margin-bottom: 100px;
+}
+
+.-seo-article h1 {
+  color: #000;
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.-seo-article h2 {
+  color: #000;
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 30px 0 35px;
+  text-align: left;
+}
+
+.-seo-article p {
+  font-family: Lato,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 30px 0;
+}
+
+.-seo-article pre a {
+  display: inline-block;
+  background-color: #ff7757;
+  border: none;
+  color: #fff !important;
+  cursor: pointer;
+  font-family: Montserrat,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .8px;
+  line-height: 47px;
+  outline: 0;
+  padding: 0 17px;
+  text-transform: uppercase;
+  vertical-align: top;
+  border-radius: 5px;
+  box-shadow: 3px 4px 18px 0 rgba(0,43,71,.15);
+  transition: background .1s;
+  &:hover {
+    background-color: #f96e4d;
+  }
+}
+
+.-seo-article ul {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.-seo-article li {
+  font-family: Lato,Arial,sans-serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.main-section.-social-commerce-for-small-business,  .main-section.-facebook-post-ideas {
+  min-height: inherit;
+  height: auto;
+  background-color: #fff;
+}
+
+.main-section.-seo-article {
+  min-height: inherit;
+  height: auto;
+  background-color: #fff;
+}
+
+.-seo-article  .main-section .main-header__logo {
+  background-position: 100% 0;
+}
+
+.-seo-article .main-nav .main-nav__item span,
+.-seo-article .main-nav .main-nav__item > a,
+.-seo-article .main-header__sign-in {
+  color: #3b3b3b;
+}
+
+.-seo-article .article-container a {
+  color: #1E90FF;
+}
+
+.-seo-article .main-section {
+  overflow-y: visible;
+}
+
+.-seo-article .main-header__ham-menu {
+  background: url(../images/icons/menu-open-main.svg) no-repeat;
+}
+
+.-seo-article .main-header__ham-menu.-active {
+  background: url(../images/icons/menu-close-main.svg) no-repeat;
+}
+
+.article-container {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto 50px;
+  padding: 0 30px;
+}
+
+.list-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.article-bold-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.social-commerce-image {
+  display: block;
+}
+
+.article-list {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.article-list li {
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.article-list p {
+  margin: 10px 0;
+}
+
+.generate-endless-facebook-post img {
+  display: inline-block;
+  max-width: 800px;
+  width: 100%;
+}
+
+.img-float-right {
+  display: inline-block;
+  max-width: 450px;
+  width: 100%;
+  float: right;
+  padding-left: 20px;
+}
+
+.with_bottom_margin {
+  margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 520px) {
+  .-social-commerce-for-small-business .main-btn, .article-main-btn {
+    font-size: 12px;
+  }
+
+  .-seo-article .article-main-btn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .-social-commerce-for-small-business .main-btn, .article-main-btn {
+    font-size: 10px;
+  }
+
+  .-seo-article .article-main-btn {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .-social-commerce-for-small-business .main-btn, .article-main-btn {
+    font-size: 8px;
+    padding: 0 10px;
+  }
+
+  .-seo-article .article-main-btn {
+    font-size: 8px;
+    padding: 0 10px;
+  }
+
+  .article-list {
+    padding-left: 0;
+  }
+}
+
+
+
+
+/* SITE MAP STYLES*/
+
+.site-map__list {
+  list-style: none;
+  margin: 0 auto 50px !important;
+}
+
+.site-map__list li {
+  margin-bottom: 10px;
+}
+
+.site-map__list li:last-of-type {
+  margin-bottom: 0;
+}
+
+.site-map__list a {
+  color: #516e91;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 20px;
+}
+
+/* SITE MAP STYLES END*/
